@@ -1,1 +1,3 @@
 # OCR
+
+Machine learning project
