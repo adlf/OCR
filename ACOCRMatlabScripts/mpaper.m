@@ -1,5 +1,4 @@
-% Machine Learning, Computer Neuronao and Sistems Diffuse, DEI,
-% In 2016.
+% Machine Learning, Computer Neuronao and Sistems Diffuse, DEI, In 2016.
 % Scan a character drawn manually.
 % Used to build the headquarters of P data, which is stored in .mat format
 % It also serves to establish the target vectors ( "target") a problem
@@ -188,7 +187,7 @@ function Dn(varargin)
  % neste momento estão na directoria de trabalho a matriz P.mat e o vector ind.mat.
  % segue-se a classificação que se faz activando a linha seguinte 
  
-           %  feval(options.fun,data);
+            feval(options.fun,data);
              
  % feval vai calcular a função options.fun, que por defeito é a ocr_fun;
  % ocr_fun chama a função myclassify que deve ser escrita pelo utilizador. 
@@ -196,8 +195,8 @@ function Dn(varargin)
  % Se se pretender usar a função para definir a matriz T dos alvos, deve
  % activar-se a linha seguinte e desactivar a anterior save P.
  % Para criar P devem desativar-se comentando-as
- %          T=data.X;
- %          save T
+           T=data.X;
+           save T
  %
  % Pode confirmar usando a grafica para desenhar os alvos na quadrícula
  % 16x16.
