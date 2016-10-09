@@ -72,8 +72,24 @@ function main
         
     end
     
+    option = menu('Load pre-data?','Yes','No');
+    
+    test_data = load('P1.mat');
+    test = test_data.P;
+    temp = zeros(256,50);
+    temp(:,1:50) = test;
+    
+    
+    data.X = temp;
+    
+    
+    if option == 1
+        ocr_fun(data);
+    else
+        mpaper();
+    end
     % Allows the user to enter handwritten characters
-    mpaper();
+    %mpaper();
 
     %  Clear variables and functions from memory
     clear;
