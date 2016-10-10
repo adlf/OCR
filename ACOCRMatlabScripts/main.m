@@ -65,8 +65,7 @@ function main
         % save the user's choice type of training
         save('user_choice_training_for_AM.mat', 'method_user_option');
        
-        result_AM = train_associative_memory(in_data, out_data,...
-            method_user_option);
+        result_AM = train_associative_memory(in_data, out_data);
         
         save(f, 'result_AM');
         
