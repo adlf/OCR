@@ -88,5 +88,4 @@ function ret = myclassify(data, filled)
             ret(pos) = result(1); 
         end
     end   
-    
 end

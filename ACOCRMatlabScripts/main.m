@@ -74,7 +74,7 @@ function main
     
     option = menu('Load pre-data?','Yes','No');
     
-    test_data = load('P1.mat');
+    test_data = load('user_input.mat');
     test = test_data.P;
     temp = zeros(256,50);
     temp(:,1:50) = test;
