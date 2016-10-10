@@ -81,11 +81,12 @@ function main
     
     data.X = temp;
     
-    flag = 0
+    flag = 1
     save('flag.mat','flag');
     if option == 1
         ocr_fun(data);
         flag = 1;
+        
         save('flag.mat','flag');
     else
         mpaper();
