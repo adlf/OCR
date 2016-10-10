@@ -84,7 +84,7 @@ function main
     
     
     if option == 1
-        ocr_fun(data);
+        ocr_fun(data,1);
     else
         mpaper();
     end

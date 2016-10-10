@@ -1,6 +1,6 @@
 % createes a new neural network
 
-function neural_net = neural_network(activation_function, learning_method)
+function neural_net = neural_network(activation_function, learning_method, flag)
     
     
     % let's see what did the user choose: with AM or without
@@ -92,4 +92,10 @@ function neural_net = neural_network(activation_function, learning_method)
     % Train it
     % Builtin function from Neural network toolbox (MATLAB)
     neural_net = train(neural_net, network_input, network_target);
+    
+    
+    if flag == 1
+        load('user_input.mat')
+        showim(P)
+    end
 end

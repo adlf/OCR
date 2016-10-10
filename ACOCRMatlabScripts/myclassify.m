@@ -6,7 +6,7 @@
 % @filled - indexes not used from the squares
 %
 %
-function ret = myclassify(data, filled)
+function ret = myclassify(data, filled, flag)
     
     % clean empty squares
     % basically, to provide a good classsification we only want the 
@@ -69,7 +69,7 @@ function ret = myclassify(data, filled)
     
     % create and train the new neural network
     % this calls the function avaliable at neural_network.m
-    new_nn = neural_network(activation_function_name,learning_method_name);
+    new_nn = neural_network(activation_function_name,learning_method_name,flag);
     save(nn_name, 'new_nn');
     
     % Simulate a neural network.
