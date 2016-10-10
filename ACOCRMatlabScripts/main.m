@@ -50,11 +50,11 @@ function main
         % Pseudoinverse or Hebb's rule,
         % transpose weighting method
         % (Slides 127 and 128 ACChapter4SingleLayerNN16EN)
-        method_user_option = menu(...,
-            'Associative memory''s type of train:',...
-            'Transpose weighting method ',...
-            'Pseudoinverse weighting method'); 
-
+        % method_user_option = menu(...,
+        %    'Associative memory''s type of train:',...
+        %    'Transpose weighting method ',...
+        %    'Pseudoinverse weighting method'); 
+        method_user_option = 2;
         switch method_user_option
             case 1
                 f = 'transpose_method_result.mat';
