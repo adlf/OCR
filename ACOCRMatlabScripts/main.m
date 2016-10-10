@@ -65,7 +65,8 @@ function main
         % save the user's choice type of training
         save('user_choice_training_for_AM.mat', 'method_user_option');
        
-        result_AM = train_associative_memory(in_data, out_data);
+        result_AM = train_associative_memory(in_data, out_data,...
+            method_user_option);
         
         save(f, 'result_AM');
         
@@ -81,9 +82,11 @@ function main
     
     data.X = temp;
     
-    
+    flag = 0
     if option == 1
-        ocr_fun(data,1);
+        ocr_fun(data);
+        flag = 1;
+        save('flag.mat','flag');
     else
         mpaper();
     end

@@ -69,7 +69,7 @@ function ret = myclassify(data, filled, flag)
     
     % create and train the new neural network
     % this calls the function avaliable at neural_network.m
-    new_nn = neural_network(activation_function_name,learning_method_name,flag);
+    new_nn = neural_network(activation_function_name,learning_method_name);
     save(nn_name, 'new_nn');
     
     % Simulate a neural network.
